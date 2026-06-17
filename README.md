@@ -117,7 +117,7 @@ fetch("https://token-jwt-luiz.vercel.app/token?uid=123456789&password=minhasenha
 
 📞 Suporte
 
-<div align="center"><a href="https://discord.gg/">
+<p align="center"><a href="https://discord.com">
 <img src="https://img.shields.io/badge/Discord-@luizgustavo004431-5865F2?style=for-the-badge&logo=discord&logoColor=white">
 </a><br><br>
 
@@ -127,7 +127,7 @@ fetch("https://token-jwt-luiz.vercel.app/token?uid=123456789&password=minhasenha
 
 <a href="https://wa.me/5533999633257">
 <img src="https://img.shields.io/badge/WhatsApp-+55%20(33)%2099963--3257-25D366?style=for-the-badge&logo=whatsapp&logoColor=white">
-</a></div>---
+</a></p>---
 
 <div align="center">❤️ Desenvolvido por Luiz Gustavo
 
