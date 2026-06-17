@@ -10,39 +10,47 @@ API para geração de Tokens JWT e informações da conta.
 
 API simples e rápida para desenvolvedores e vendedores que trabalham com bots e automações.
 
-</div>---
+</div>
 
-✨ Sobre
+---
 
-A JWT Token API fornece uma maneira simples e eficiente de gerar tokens JWT e obter informações da conta através de um único endpoint.
+## ✨ Sobre
+
+A **JWT Token API** fornece uma maneira simples e eficiente de gerar tokens JWT e obter informações da conta através de um único endpoint.
 
 Ela é ideal para desenvolvedores e vendedores que utilizam bots, painéis ou outros sistemas automatizados.
 
 ---
 
-🚀 Endpoint
+## 🚀 Endpoint
 
+```http
 GET https://token-jwt-luiz.vercel.app/token
+```
 
 ---
 
-📥 Parâmetros
+## 📥 Parâmetros
 
-Parâmetro| Tipo| Obrigatório| Descrição
-uid| String| ✅| UID da conta
-password| String| ✅| Senha da conta
-key| String| ✅| Chave de acesso da API
+| Parâmetro | Tipo | Obrigatório | Descrição |
+|------------|------|:----------:|------------|
+| `uid` | String | ✅ | UID da conta |
+| `password` | String | ✅ | Senha da conta |
+| `key` | String | ✅ | Chave de acesso da API |
 
 ---
 
-📖 Exemplo de requisição
+## 📖 Exemplo de requisição
 
+```http
 https://token-jwt-luiz.vercel.app/token?uid=123456789&password=minhasenha&key=lizin
+```
 
 ---
 
-✅ Resposta de sucesso
+## ✅ Resposta de sucesso
 
+```json
 {
   "access_token": "xxxxxxxxxxxxxxxx",
   "account_id": 15364885788,
@@ -53,37 +61,42 @@ https://token-jwt-luiz.vercel.app/token?uid=123456789&password=minhasenha&key=li
   "status": "success",
   "token": "eyJhbGciOi..."
 }
+```
 
 ---
 
-📋 Campos retornados
+## 📋 Campos retornados
 
-Campo| Descrição
-access_token| Token de acesso
-account_id| ID da conta
-account_name| Nick da conta
-open_id| Identificador único
-platform| Plataforma da conta
-region| Região da conta
-status| Status da requisição
-token| Token JWT gerado
+| Campo | Descrição |
+|---------|-----------|
+| `access_token` | Token de acesso |
+| `account_id` | ID da conta |
+| `account_name` | Nick da conta |
+| `open_id` | Identificador único |
+| `platform` | Plataforma da conta |
+| `region` | Região da conta |
+| `status` | Status da requisição |
+| `token` | Token JWT gerado |
 
 ---
 
-❌ Possíveis erros
+## ❌ Possíveis erros
 
-Conta banida
+### Conta banida
 
+```json
 {
   "message": "Resposta OAuth sem access_token ou open_id"
 }
+```
 
 Esse erro geralmente indica que a conta está banida ou indisponível.
 
 ---
 
-🐍 Exemplo em Python
+## 🐍 Exemplo em Python
 
+```python
 import requests
 
 url = "https://token-jwt-luiz.vercel.app/token"
@@ -97,18 +110,21 @@ params = {
 response = requests.get(url, params=params)
 
 print(response.json())
+```
 
 ---
 
-⚡ Exemplo em JavaScript
+## ⚡ Exemplo em JavaScript
 
+```javascript
 fetch("https://token-jwt-luiz.vercel.app/token?uid=123456789&password=minhasenha&key=lizin")
   .then(response => response.json())
   .then(data => console.log(data));
+```
 
 ---
 
-📜 Aviso
+## 📜 Aviso
 
 - A API é pública.
 - O uso é livre.
@@ -117,21 +133,19 @@ fetch("https://token-jwt-luiz.vercel.app/token?uid=123456789&password=minhasenha
 
 ---
 
-📞 Suporte
+## 📞 Suporte
 
-<p align="center"><a href="https://discord.com">
-<img src="https://img.shields.io/badge/Discord-@luizgustavo004431-5865F2?style=for-the-badge&logo=discord&logoColor=white">
-</a><br><br>
+[![Discord](https://img.shields.io/badge/Discord-@luizgustavo004431-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com)
 
-<a href="https://t.me/LuizvendasFF">
-<img src="https://img.shields.io/badge/Telegram-@LuizvendasFF-26A5E4?style=for-the-badge&logo=telegram&logoColor=white">
-</a><br><br>
+[![Telegram](https://img.shields.io/badge/Telegram-@LuizvendasFF-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/LuizvendasFF)
 
-<a href="https://wa.me/5533999633257">
-<img src="https://img.shields.io/badge/WhatsApp-+55%20(33)%2099963--3257-25D366?style=for-the-badge&logo=whatsapp&logoColor=white">
-</a></p>---
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-+55%20(33)%2099963--3257-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/5533999633257)
 
-<div align="center">❤️ Desenvolvido por Luiz Gustavo
+---
+
+<div align="center">
+
+## ❤️ Desenvolvido por Luiz Gustavo
 
 Se este projeto foi útil para você, considere deixar uma ⭐ no repositório.
 
