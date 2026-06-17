@@ -1,14 +1,22 @@
-JWT Token API
+<div align="center">JWT Token API
 
-API para geração de tokens JWT e informações básicas da conta.
+API para geração de tokens JWT e informações da conta.
 
-✨ Descrição
+"Status" (https://img.shields.io/badge/status-online-green)
+"Method" (https://img.shields.io/badge/method-GET-blue)
+"Region" (https://img.shields.io/badge/region-BR-yellow)
 
-A JWT Token API foi desenvolvida para fornecer uma forma simples e rápida de gerar tokens JWT e obter informações da conta. Ela é especialmente útil para desenvolvedores e vendedores que trabalham com bots, sistemas automatizados e integrações que necessitam de autenticação e dados da conta.
+</div>---
+
+✨ Sobre
+
+A JWT Token API foi criada para fornecer uma maneira simples e rápida de gerar tokens JWT e obter informações da conta.
+
+Ideal para desenvolvedores e vendedores que trabalham com bots e automações, oferecendo uma integração simples através de um único endpoint.
 
 ---
 
-📌 Endpoint
+🚀 Endpoint
 
 GET https://token-jwt-luiz.vercel.app/token
 
@@ -16,45 +24,35 @@ GET https://token-jwt-luiz.vercel.app/token
 
 📥 Parâmetros
 
-Parâmetro| Tipo| Obrigatório| Descrição
-"uid"| String| ✅| UID da conta
-"password"| String| ✅| Senha da conta
-"key"| String| ✅| Chave de acesso da API
+Parâmetro| Obrigatório| Descrição
+uid| ✅| UID da conta
+password| ✅| Senha da conta
+key| ✅| Chave de acesso da API
 
-Exemplo
+---
+
+📖 Exemplo
 
 https://token-jwt-luiz.vercel.app/token?uid=123456789&password=minhasenha&key=lizin
 
 ---
 
-✅ Resposta de sucesso
+✅ Resposta
 
 {
-  "access_token": "xxxxxxxxxxxxxxxxxxxxxxxx",
+  "access_token": "...",
   "account_id": 15364885788,
   "account_name": "NomeDaConta",
-  "open_id": "xxxxxxxxxxxxxxxx",
+  "open_id": "...",
   "platform": 4,
   "region": "BR",
   "status": "success",
   "token": "eyJhbGciOi..."
 }
 
-Campos retornados
-
-Campo| Descrição
-"access_token"| Token de acesso
-"account_id"| ID da conta
-"account_name"| Nick da conta
-"open_id"| Identificador único
-"platform"| Plataforma da conta
-"region"| Região da conta
-"status"| Status da requisição
-"token"| Token JWT gerado
-
 ---
 
-❌ Resposta de erro
+❌ Erros
 
 Conta banida
 
@@ -62,56 +60,22 @@ Conta banida
   "message": "Resposta OAuth sem access_token ou open_id"
 }
 
-Essa resposta indica que a conta provavelmente está banida ou indisponível.
-
 ---
 
-📖 Exemplo em Python
+💖 Apoie o Projeto
 
-import requests
+Se esta API for útil para você, considere dar os créditos ao autor.
 
-url = "https://token-jwt-luiz.vercel.app/token"
+<div align="center">""Discord" (https://img.shields.io/badge/Discord-@luizgustavo004431-5865F2?style=for-the-badge&logo=discord&logoColor=white)" (https://discord.com)
 
-params = {
-    "uid": "123456789",
-    "password": "minhasenha",
-    "key": "lizin"
-}
+""Telegram" (https://img.shields.io/badge/Telegram-@LuizvendasFF-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)" (https://t.me/LuizvendasFF)
 
-response = requests.get(url, params=params)
+""WhatsApp" (https://img.shields.io/badge/WhatsApp-Contato-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)" (https://wa.me/5533999633257)
 
-print(response.json())
+</div>---
 
----
+<div align="center">Desenvolvido por Luiz Gustavo
 
-📖 Exemplo em JavaScript
+⭐ Se gostou do projeto, considere deixar uma estrela no repositório.
 
-fetch("https://token-jwt-luiz.vercel.app/token?uid=123456789&password=minhasenha&key=lizin")
-  .then(response => response.json())
-  .then(data => console.log(data));
-
----
-
-⚠️ Aviso
-
-- A API é pública e pode ser utilizada livremente.
-- Se utilizar esta API em bots, painéis ou outros projetos, mantenha os créditos.
-- Recomenda-se utilizá-la apenas em contas próprias ou autorizadas.
-
----
-
-❤️ Créditos
-
-Desenvolvido por Luiz Gustavo
-
-Discord
-
-@luizgustavo004431
-
-Telegram
-
-@LuizvendasFF
-
-WhatsApp
-
-+55 (33) 99963-3257
+</div>
