@@ -1,10 +1,12 @@
-<div align="center">🔑 JWT Token API
+<div align="center">
+
+# 🔑 JWT Token API
 
 API para geração de Tokens JWT e informações da conta.
 
-"Status" (https://img.shields.io/badge/Status-Online-green?style=for-the-badge)
-"Method" (https://img.shields.io/badge/Method-GET-blue?style=for-the-badge)
-"Region" (https://img.shields.io/badge/Region-BR-yellow?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Online-green?style=for-the-badge)
+![Method](https://img.shields.io/badge/Method-GET-blue?style=for-the-badge)
+![Region](https://img.shields.io/badge/Region-BR-yellow?style=for-the-badge)
 
 API simples e rápida para desenvolvedores e vendedores que trabalham com bots e automações.
 
